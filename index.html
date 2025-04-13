@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima Celeste | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href=".//CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"> 🍸 Prima Celeste</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="btn" style="color: black;">Book Table</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Welcome to Prima Celeste</h1>
+        <p>Experience the finest culinary journey with our exquisite dishes crafted by world-class chefs using the freshest ingredients.</p>
+        <a href="#reservation" class="btn" style="color: black;">Reserve a Table</a>
+    </section>
+    
+    <section id="about">
+        <div class="section-title">
+            <h2>Our Story</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./Image/resto.jpeg" alt="Restaurant interior" class="about-image">
+            </div>
+            <div class="about-text">
+                <h3>A Passion for Gastronomy</h3>
+                <p>Founded in 2010, Prima Celeste was born from a passion for creating extraordinary dining experiences. Our Executive Chef Michel Laurent brings over 20 years of culinary expertise from around the world.</p>
+                <p>We pride ourselves on sourcing the finest local and seasonal ingredients, transforming them into memorable dishes that celebrate both tradition and innovation.</p>
+                <p>At Prima Celeste, we believe dining is not just about food, but about creating moments and memories to cherish. Our attentive staff, elegant ambiance, and exceptional cuisine combine to offer you a truly remarkable gastronomic journey.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu" style="background-color:#1B4D3E;">
+        <div class="section-title">
+            <h2 style="color: White;">Our Menu</h2>
+            <div class="line"></div>
+        </div>
+        <div class="menu-categories">
+            <a href="#all" class="btn" style="color: black;">All</a>
+            <a href="#appetizers" class="btn" style="color: black;">Appetizers</a>
+            <a href="#main" class="btn" style="color: black;">Main Course</a>
+            <a href="#desserts" class="btn" style="color: black;">Desserts</a>
+            <a href="#beverages" class="btn" style="color: black;">Beverages</a>
+        <div id="all"></div>
+        <div id="appetizers"></div>
+        <div id="main"></div>
+        <div id="desserts"></div>
+        <div id="beverages"></div>
+        <div class="menu-items">
+            <div class="menu-item" data-category="appetizers">
+                <div class="menu-item-img">
+                    <img src="./Image/tomato.jpg" alt="Bruschetta" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Tomato Bruschetta</h3>
+                        <span class="menu-item-price">$12</span>
+                    </div>
+                    <p class="menu-item-desc">Grilled artisan bread topped with diced heirloom tomatoes, fresh basil, garlic, and extra virgin olive oil.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="appetizers">
+                <div class="menu-item-img">
+                    <img src="./Image/calamari.jpg" alt="Calamari" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Crispy Calamari</h3>
+                        <span class="menu-item-price">$16</span>
+                    </div>
+                    <p class="menu-item-desc">Lightly dusted and fried calamari served with lemon aioli and spicy marinara sauce.</p>
+                </div>
+            </div>  
+            
+            <div class="menu-item" data-category="appetizers">
+                <div class="menu-item-img">
+                    <img src="./Image/scallops.jpg" alt="Seared Scallops" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Seared Scallops</h3>
+                        <span class="menu-item-price">$28</span>
+                    </div>
+                    <p class="menu-item-desc">Hand-dived scallops with pea purée, crispy pancetta and mint oil.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main">
+                <div class="menu-item-img">
+                    <img src="./Image/Risotto.jpeg" alt="Truffle Risotto" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Truffle Risotto</h3>
+                        <span class="menu-item-price">$24</span>
+                    </div>
+                    <p class="menu-item-desc">Creamy arborio rice cooked with wild mushrooms, finished with black truffle and aged parmesan.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main">
+                <div class="menu-item-img">
+                    <img src="./Image/beefwellington.jpg" alt="Beef Wellington" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Beef Wellington</h3>
+                        <span class="menu-item-price">$36</span>
+                    </div>
+                    <p class="menu-item-desc">Prime beef fillet wrapped in mushroom duxelles and buttery puff pastry, served with red wine jus.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main">
+                <div class="menu-item-img">
+                    <img src="./Image/salmon.avif" alt="Salmon" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Herb-Crusted Salmon</h3>
+                        <span class="menu-item-price">$32</span>
+                    </div>
+                    <p class="menu-item-desc">Wild-caught salmon with a herb crust, served with roasted vegetables and lemon butter sauce.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-img">
+                    <img src="./Image/creme.jpeg" alt="Crème Brûlée" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Crème Brûlée</h3>
+                        <span class="menu-item-price">$12</span>
+                    </div>
+                    <p class="menu-item-desc">Classic vanilla bean custard with a caramelized sugar crust, served with fresh berries.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-img">
+                    <img src="./Image/fondant.jpg" alt="Chocolate Fondant" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Chocolate Fondant</h3>
+                        <span class="menu-item-price">$14</span>
+                    </div>
+                    <p class="menu-item-desc">Warm chocolate cake with a molten center, served with vanilla ice cream and raspberry coulis.</p>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="beverages">
+                <div class="menu-item-img">
+                    <img src="./Image/wine.jpeg" alt="Wine Selection" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Wine Selection</h3>
+                        <span class="menu-item-price">$12-$200</span>
+                    </div>
+                    <p class="menu-item-desc">Extensive collection of fine wines from around the world. Ask your server for recommendations.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="beverages">
+                <div class="menu-item-img">
+                    <img src="./Image/cocktails.jpeg" alt="Signature Cocktails" class="menu-image">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <h3>Signature Cocktails</h3>
+                        <span class="menu-item-price">$14</span>
+                    </div>
+                    <p class="menu-item-desc">Handcrafted cocktails made with premium spirits and fresh ingredients. Try our famous Elderflower Martini.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="section-title">
+            <h2 style="color: black;">Contact Us</h2>
+            <div class="line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 style="color: black;">Get in Touch</h3>
+                <div class="contact-detail">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p style="color: black;"> 239 Mauli St, San Pablo Sta.Ana Pampanga</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p style="color: black;">(+639) 985 366 6632 </p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p style="color: black;">infoprimaceleste@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                        <h4>Hours</h4>
+                        <p style="color: black;" >Monday - Friday: 5:00 PM - 11:00 PM</p>
+                        <p style="color: black;">Saturday - Sunday: 12:00 PM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div id="reservation" class="reservation">
+                <h3 style="color: black;" >Make a Reservation</h3>
+                <form class="reservation-form" id="reservationForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <div style="display: flex; gap: 1rem;">
+                        <input type="date" required>
+                        <select required>
+                            <option value="" disabled selected>Time</option>
+                            <option>5:00 PM</option>
+                            <option>6:00 PM</option>
+                            <option>7:00 PM</option>
+                            <option>8:00 PM</option>
+                            <option>9:00 PM</option>
+                        </select>
+                    </div>
+                    <select required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5+ People</option>
+                    </select>
+                    <textarea placeholder="Special Requests" rows="3"></textarea>
+                    <button type="submit" class="btn" style="color: black;" >Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h2 class="footer-heading">The Finest Restaurant in Town</h2>
+        <p class="footer-tagline">Where the elite choose to dine</p>
+        
+        <p class="footer-statement">Be grateful that we allow you to experience our culinary excellence. Others are on a waiting list.</p>
+        
+        <div class="social-links">
+            <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <p class="copyright">© 2025 PRIMA CELESTE. ALL RIGHTS RESERVED. NO EXCEPTIONS.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
